@@ -1,0 +1,27 @@
+{
+  "authorisedList": [    
+    "finos/git-proxy.git"
+  ],
+  "sink": [
+    {
+      "type": "fs",
+      "params": {
+        "filepath": "./."
+      },
+      "enabled": true
+    },
+    {
+      "type": "mongo",
+      "connectionString": "mongodb://localhost:27017/gitproxy",
+      "options": {        
+      },      
+      "enabled": false
+    }
+  ],
+  "authentication": [
+    {
+      "type": "local",
+      "enabled": true
+    }
+  ]
+}
